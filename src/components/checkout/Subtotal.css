@@ -1,0 +1,33 @@
+.subtotal {
+  width: 100%;
+  min-width: 260px;
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #606363;
+  padding: 1em;
+}
+
+.subtotal__value {
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+
+.subtotal__gift,
+.subtotal__value {
+  width: 100%;
+  text-align: left;
+}
+
+.subtotal__gift input {
+  margin-right: 0.5rem;
+}
+
+.subtotal .btn {
+  max-width: 200px;
+  width: 100%;
+
+  margin-left: -2.7rem;
+  margin-top: 1rem;
+}

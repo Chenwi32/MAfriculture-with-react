@@ -1,0 +1,94 @@
+import React, { useState } from "react";
+import "./Login.css";
+import logo from "../images/icons/7777.png";
+import { Link, useHistory } from "react-router-dom";
+import { auth } from "../../firebase";
+import { InfoRounded } from "@material-ui/icons";
+
+function Login() {
+  // useHistory alows us to programatically change url when somethi ng
+  const history = useHistory();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const signIn = (event) => {
+    event.preventDefault();
+
+    // Firebase Funtionality
+    auth
+      .signInWithEmailAndPassword(email, password)
+      .then((register) => {
+        if (register) {
+          history.push("/");
+        }
+      })
+      .catch((error) => alert(error.message));
+  };
+
+  const register = (event) => {
+    event.preventDefault();
+
+    // Firebase Functionality
+
+    auth
+      .createUserWithEmailAndPassword(auth, email, password)
+      .then((auth) => {
+        console.log(auth);
+        if (auth) {
+          history.push("/");
+        }
+      })
+      .catch((error) => alert(error.message));
+  };
+
+  return (
+    <div className="login flex__col">
+      <div className="logo">
+        <Link className="link" to="/">
+          <img src={logo} alt="" />
+        </Link>
+      </div>
+      <div className="login__container flex__col">
+        <h1>Sign-In</h1>
+        <form className="form flex__col">
+          <div className="input__container ">
+            <h5>E-mail</h5>
+            <input
+              className="input"
+              type="email"
+              /* This tires the useState to this input field */
+              value={email}
+              onChange={(event) => setEmail(event.target.value)}
+            />
+          </div>
+          <div className="input__container">
+            <h5>Password</h5>
+            <input
+              className="input"
+              type="password"
+              value={password}
+              onChange={(event) => setPassword(event.target.value)}
+            />
+          </div>
+
+          <button className="btn" type="submit" onClick={signIn}>
+            Sign In
+          </button>
+
+          <p>
+            By signing in, you agree to the MAfriculture
+            <a href=""> use</a> and <a href="">sale</a> policies. Please see our
+            <a href=""> Privacy</a> notice, <a href="">Cookies</a> notice and
+            our <a href="">Interest-Based Ads</a> notice
+          </p>
+          <p className="create__notice">You don't have an account?</p>
+          <button className="register" onClick={register}>
+            Create an account
+          </button>
+        </form>
+      </div>
+    </div>
+  );
+}
+
+export default Login;

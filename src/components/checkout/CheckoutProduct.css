@@ -1,0 +1,16 @@
+.checkoutProduct {
+  margin: 3rem 0;
+  background-color: rgba(66, 65, 65, 0.206);
+  padding: 1rem;
+}
+
+.checkoutProduct img {
+  width: 40%;
+  height: auto;
+}
+
+.info {
+  min-height: 150px;
+  justify-content: space-between;
+  color: #fff;
+}

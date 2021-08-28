@@ -1,0 +1,72 @@
+.login {
+  width: 55%;
+  margin: 2rem auto;
+  background-color: #bec2c2;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+.login a:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  width: 50%;
+}
+.login img {
+  object-fit: contain;
+  padding: 0.5rem 1.5rem;
+  width: 100%;
+  margin: auto;
+  /*   background-color: #131313fd; */
+}
+
+.login__container {
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid #000;
+}
+
+.form {
+  align-items: center;
+  justify-content: space-around;
+}
+
+.form .btn {
+  margin: 1rem 0;
+  width: 70%;
+}
+
+.input__container {
+  width: 100%;
+  margin: 0.5rem 0 0;
+}
+
+.input {
+  width: 96%;
+  padding: 0.3rem 0.5rem;
+  margin: 0.5rem;
+  font-size: 1em;
+  background-color: inherit;
+  border: none;
+  border-bottom: 1px solid #535353;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.create__notice {
+  margin-top: 1rem;
+}
+
+.register {
+  margin-top: 0.2rem;
+  background-color: inherit;
+  font-weight: 600;
+  color: rgb(236, 31, 4);
+  border: none;
+  cursor: pointer;
+}
+.register:hover {
+  text-decoration: underline;
+}

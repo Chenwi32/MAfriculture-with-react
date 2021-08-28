@@ -1,0 +1,17 @@
+.payment {
+  color: #fff;
+}
+
+.method,
+.payment__section {
+  width: 100%;
+}
+
+.method {
+  width: 40%;
+}
+
+.two__smalls {
+  width: 100%;
+  justify-content: space-between;
+}

@@ -1,0 +1,31 @@
+.checkout {
+  display: flex;
+  padding: 1rem;
+  background-color: #000;
+  height: max-content;
+}
+
+/*/////// Checkout Styles ///////*/
+.checkout__left {
+  flex: 1;
+  margin-right: 0.5rem;
+}
+
+.checkout__title {
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #bec2c23d;
+  color: #fff;
+}
+
+.checkout__title::before {
+  content: "\e613";
+  font-family: "jw-icons";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  color: black;
+}

@@ -1,0 +1,11 @@
+.home-container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.banner {
+  z-index: -1;
+  mask-image: linear-gradient(to bottom, #000, #0000);
+  margin-bottom: -25rem;
+}
