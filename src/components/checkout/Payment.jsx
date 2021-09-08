@@ -19,7 +19,7 @@ function Payment() {
         <h1>
           Checkout(<Link to="/checkout">{basket?.length} item(s)</Link>)
         </h1>
-        <div className="payment__section flex">
+        <div className="payment__section delivery flex">
           <h3>Delivery Adress</h3>
           <small className="adress">
             <p>{user ? user.email : "Customer"}</p>
@@ -43,28 +43,30 @@ function Payment() {
         </div>
         <div className="payment__section flex">
           <h3>Payment Method</h3>
-          <div className="method">
+          <div className="method flex__col">
             <h4>Card Details</h4>
             <div className="two__smalls flex">
               <small>bahbsa</small>
               <small>lnksds djd</small>
             </div>
             <p>
-              Order Total:{" "}
-              <CurrencyFormat
-                renderText={(value) => (
-                  <>
-                    <p className="subtotal__value">
-                      <strong>{value}</strong>
-                    </p>
-                  </>
-                )}
-                decimalScale={2}
-                value={getBasketTotal(basket)}
-                displayType={"text"}
-                thousandSeparator={true}
-                prefix={"FCFA"}
-              />
+              {`
+              Order Total: ${(
+                <CurrencyFormat
+                  renderText={(value) => (
+                    <>
+                      <p className="subtotal__value">
+                        <strong>{value}</strong>
+                      </p>
+                    </>
+                  )}
+                  decimalScale={2}
+                  value={getBasketTotal(basket)}
+                  displayType={"text"}
+                  thousandSeparator={true}
+                  prefix={"FCFA"}
+                />
+              )}`}
             </p>
             <button
               className="btn"

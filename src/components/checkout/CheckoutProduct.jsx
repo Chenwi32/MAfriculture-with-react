@@ -19,6 +19,7 @@ function CheckoutProduct({ id, image, title, price, rating }) {
       <div className="info flex__col">
         <div>
           <p>{title}</p>
+          <p>XAF {price} </p>
           <div className="rating flex">
             {Array(rating)
               .fill()

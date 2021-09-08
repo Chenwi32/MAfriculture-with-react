@@ -1,0 +1,16 @@
+.footer {
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #131921;
+  min-height: 50px;
+  margin-top: 1rem;
+  padding: 0 1rem;
+  margin-top: 53vh;
+}
+
+.change__BGcolor {
+  background-color: rgb(144, 170, 162);
+  font-size: 1em;
+  font-weight: 600;
+  padding: 0.5rem;
+}

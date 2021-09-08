@@ -9,3 +9,9 @@
   mask-image: linear-gradient(to bottom, #000, #0000);
   margin-bottom: -25rem;
 }
+
+@media (max-width: 700px) {
+  .home .container .one__row {
+    flex-direction: column;
+  }
+}

@@ -2,16 +2,31 @@
   color: #fff;
 }
 
+.pament__items .checkoutProduct {
+  margin: 0.5rem 1.2rem;
+}
+
 .method,
 .payment__section {
-  width: 100%;
+  width: 80%;
+  justify-content: space-between;
+  margin: 1rem;
+}
+
+.delivery {
+  width: 45%;
 }
 
 .method {
   width: 40%;
 }
 
+.method h4 {
+  margin-bottom: 0.5rem;
+}
+
 .two__smalls {
   width: 100%;
   justify-content: space-between;
+  margin: 0.5rem;
 }

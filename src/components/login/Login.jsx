@@ -25,20 +25,8 @@ function Login() {
       .catch((error) => alert(error.message));
   };
 
-  const register = (event) => {
-    event.preventDefault();
-
-    // Firebase Functionality
-
-    auth
-      .createUserWithEmailAndPassword(auth, email, password)
-      .then((auth) => {
-        console.log(auth);
-        if (auth) {
-          history.push("/");
-        }
-      })
-      .catch((error) => alert(error.message));
+  const toRegister = () => {
+    history.push("/register");
   };
 
   return (
@@ -49,7 +37,7 @@ function Login() {
         </Link>
       </div>
       <div className="login__container flex__col">
-        <h1>Sign-In</h1>
+        <h1>Sign-in</h1>
         <form className="form flex__col">
           <div className="input__container ">
             <h5>E-mail</h5>
@@ -75,14 +63,8 @@ function Login() {
             Sign In
           </button>
 
-          <p>
-            By signing in, you agree to the MAfriculture
-            <a href=""> use</a> and <a href="">sale</a> policies. Please see our
-            <a href=""> Privacy</a> notice, <a href="">Cookies</a> notice and
-            our <a href="">Interest-Based Ads</a> notice
-          </p>
           <p className="create__notice">You don't have an account?</p>
-          <button className="register" onClick={register}>
+          <button className="register" onClick={toRegister}>
             Create an account
           </button>
         </form>

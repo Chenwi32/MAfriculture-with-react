@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 1.1rem;
-  width: 100%;
+  width: 90%;
   max-height: 400px;
   min-width: 150px;
   background-color: #60636380;
@@ -12,13 +12,13 @@
   margin: 0.7rem;
 }
 .product:hover {
-  box-shadow: 0px 0px 3px 3px #f3f3f34b;
-  transform: scale(1.02);
+  box-shadow: 0px 0px 3px 3px #4747474b;
+  transform: scale(1.01);
 }
 
 .product .about__product {
-  color: #fff;
   width: 100%;
+  color: #fff;
 }
 .product .about__product .product__details {
   font-weight: 900;
@@ -30,4 +30,11 @@
   width: 100%;
   object-fit: contain;
   margin-bottom: 1rem;
+}
+
+@media screen, (max-width: 700px) {
+  .product {
+    min-width: 0;
+    margin: 0.7rem auto;
+  }
 }
