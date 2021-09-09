@@ -1,5 +1,6 @@
 .home-container {
   margin: auto;
+  padding: 0 1.5rem;
   display: flex;
   flex-direction: column;
 }
@@ -7,10 +8,14 @@
 .banner {
   z-index: -1;
   mask-image: linear-gradient(to bottom, #000, #0000);
-  margin-bottom: -25rem;
+  margin-bottom: -20rem;
 }
 
 @media (max-width: 700px) {
+  .home-container {
+    padding: 0 1rem;
+  }
+
   .home .container .one__row {
     flex-direction: column;
   }

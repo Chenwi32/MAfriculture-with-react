@@ -41,7 +41,7 @@ BgBtn.addEventListener("click", () => {
     productText.forEach((product) => {
       product.style.color = "#000";
     });
-  } else if (bodyBG.style.backgroundColor == colors[0]) {
+  } else if (bodyBG.style.backgroundColor === colors[0]) {
     productBG.forEach((product) => {
       product.style.backgroundColor = "#60636380";
     });

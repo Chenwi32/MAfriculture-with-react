@@ -1,6 +1,6 @@
 .subtotal {
   width: 100%;
-  min-width: 260px;
+  min-width: 200px;
   margin: 0.5rem;
   display: flex;
   flex-direction: column;
@@ -26,8 +26,7 @@
 
 .subtotal .btn {
   max-width: 200px;
-  width: 100%;
 
-  margin-left: -2.7rem;
+  margin-left: -2.5rem;
   margin-top: 1rem;
 }

@@ -1,9 +1,15 @@
 .header {
   height: 60px;
   background-color: #131921;
+  position: sticky;
+  z-index: 100;
+  top: 0;
+}
+.header__container {
+  height: 60px;
+  background-color: #131921;
   display: flex;
   align-items: center;
-  position: sticky;
   z-index: 100;
   top: 0;
 }

@@ -20,7 +20,7 @@ function Product({ id, title, image, price, rating }) {
   };
 
   return (
-    <div className="product">
+    <div className="product ">
       <div className="about__product">
         <p className="product__details">{title}</p>
 

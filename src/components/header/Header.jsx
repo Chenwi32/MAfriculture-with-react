@@ -19,39 +19,43 @@ function Header(authUser) {
 
   return (
     <div className="header">
-      <Link to="/">
-        <img src={logo} className="logo" alt="logo" />
-      </Link>
-
-      <div className="header-search">
-        <input className="search-input" type="text" />
-        <SearchIcon className="search-icon" />
-      </div>
-      <div className="header-nav">
-        <Link className="link" to={!user && "/login"}>
-          <div onClick={handleAuthentication} className="header-option">
-            <span className="line-1">
-              {user ? `Hello ${user.email}` : `Hello Guest`}
-            </span>
-            <span className="line-2">{user ? `Sign Out` : `Sign In`}</span>
-          </div>
+      <div className="header__container container">
+        <Link to="/">
+          <img src={logo} className="logo" alt="logo" />
         </Link>
 
-        <div className="header-option">
-          <span className="line-1">Returns</span>
-          <span className="line-2">& Orders</span>
+        <div className="header-search">
+          <input className="search-input" type="text" />
+          <SearchIcon className="search-icon" />
         </div>
-        <div className="header-option">
-          <span className="line-1">Your</span>
-          <span className="line-2">Prime</span>
-        </div>
+        <div className="header-nav">
+          <Link className="link" to={!user && "/login"}>
+            <div onClick={handleAuthentication} className="header-option">
+              <span className="line-1">
+                {user ? `Hello ${user.email}` : `Hello Guest`}
+              </span>
+              <span className="line-2">{user ? `Sign Out` : `Sign In`}</span>
+            </div>
+          </Link>
 
-        <Link className="link" to="/checkout">
-          <div className="card-icon">
-            <span className="items-inCart">{basket?.length}</span>
-            <AddShoppingCartIcon />
+          <Link className="link" to="/products">
+            <div className="header-option">
+              <span className="line-2">Store</span>
+            </div>
+          </Link>
+
+          <div className="header-option">
+            <span className="line-1">Returns</span>
+            <span className="line-2">& Orders</span>
           </div>
-        </Link>
+
+          <Link className="link" to="/checkout">
+            <div className="card-icon">
+              <span className="items-inCart">{basket?.length}</span>
+              <AddShoppingCartIcon />
+            </div>
+          </Link>
+        </div>
       </div>
     </div>
   );

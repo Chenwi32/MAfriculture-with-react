@@ -29,17 +29,35 @@ code {
     monospace;
 }
 
+/*////////////// Utilities ///////// */
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
 .flex {
   display: flex;
 }
+
 .flex__col {
   display: flex;
   flex-direction: column;
 }
 
-.container {
-  max-width: 1200px;
-  margin: auto;
+.grid__2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid__3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid__4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .btn {

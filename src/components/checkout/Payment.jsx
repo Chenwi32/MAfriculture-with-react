@@ -14,7 +14,7 @@ function Payment() {
   const [disabled, setDisabled] = useState(true);
 
   return (
-    <div className="payment">
+    <div className="payment container">
       <div className="payment__container">
         <h1>
           Checkout(<Link to="/checkout">{basket?.length} item(s)</Link>)
@@ -50,23 +50,21 @@ function Payment() {
               <small>lnksds djd</small>
             </div>
             <p>
-              {`
-              Order Total: ${(
-                <CurrencyFormat
-                  renderText={(value) => (
-                    <>
-                      <p className="subtotal__value">
-                        <strong>{value}</strong>
-                      </p>
-                    </>
-                  )}
-                  decimalScale={2}
-                  value={getBasketTotal(basket)}
-                  displayType={"text"}
-                  thousandSeparator={true}
-                  prefix={"FCFA"}
-                />
-              )}`}
+              Order Total:{" "}
+              <CurrencyFormat
+                renderText={(value) => (
+                  <>
+                    <p className="subtotal__value">
+                      <strong>{value}</strong>
+                    </p>
+                  </>
+                )}
+                decimalScale={2}
+                value={getBasketTotal(basket)}
+                displayType={"text"}
+                thousandSeparator={true}
+                prefix={"FCFA"}
+              />
             </p>
             <button
               className="btn"

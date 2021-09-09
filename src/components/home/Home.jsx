@@ -14,9 +14,9 @@ import Product from "../product/Product";
 function Home() {
   return (
     <div className="home">
-      <div className="home-container container">
-        <img src={banner} alt="banner" className="banner" />
+      <img src={banner} alt="banner" className="banner" />
 
+      <div className="home-container container">
         {/*///////// Products /////////////*/}
         <div className="one__row flex">
           <Product
@@ -57,7 +57,7 @@ function Home() {
             id={5}
           />
         </div>
-        <div className="one__row flex">
+        <div className="one__row premium flex">
           <Product
             title="Floor Flower Vase with Inscription"
             image={product_1}
