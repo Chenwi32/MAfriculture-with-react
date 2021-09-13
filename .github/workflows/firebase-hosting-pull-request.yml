@@ -11,8 +11,9 @@ jobs:
       - uses: actions/checkout@v2
       - run: yarn add npm@latest
       - run: npm --version
+      - run: node --version
       - run: npm install
-      - run: npm run build
+      - run: npm run deploy
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
