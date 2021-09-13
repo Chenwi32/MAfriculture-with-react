@@ -3,7 +3,6 @@ import "./Login.css";
 import logo from "../images/icons/7777.png";
 import { Link, useHistory } from "react-router-dom";
 import { auth } from "../../firebase";
-import { InfoRounded } from "@material-ui/icons";
 
 function Login() {
   // useHistory alows us to programatically change url when somethi ng

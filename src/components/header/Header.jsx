@@ -6,7 +6,6 @@ import AddShoppingCartIcon from "@material-ui/icons/AddShoppingCart";
 import { Link } from "react-router-dom";
 import { useStateValue } from "../../StateProvider";
 import { auth } from "../../firebase";
-import { render } from "@testing-library/react";
 
 function Header(authUser) {
   const [{ basket, user }, dispatch] = useStateValue();
