@@ -1,16 +1,16 @@
 .login {
-  width: 55%;
+  width: 50%;
   margin: 2rem auto;
   background-color: #bec2c2;
   align-items: center;
-  padding: 1rem 1.5rem;
+  padding: 2rem;
 }
 .login a:hover {
   text-decoration: underline;
 }
 
 .logo {
-  width: 50%;
+  width: 40%;
 }
 .login img {
   object-fit: contain;
@@ -24,6 +24,7 @@
   margin-top: 1rem;
   padding: 1rem;
   border: 1px solid #000;
+  width: 100%;
 }
 
 .form {
@@ -69,4 +70,10 @@
 }
 .register:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+  .login {
+    width: 85%;
+  }
 }

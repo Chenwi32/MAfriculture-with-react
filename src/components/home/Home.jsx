@@ -12,9 +12,53 @@ import {
 import Product from "../product/Product";
 
 function Home() {
+  /*///////// Animate Text //////////*/
+
+  const animateText = () => {
+    const textContainer = document.getElementById("animated");
+    const feel = document.getElementById("feel");
+    const priority = document.getElementById("priority");
+
+    textContainer.innerHTML = feel.innerHTML;
+    if (textContainer.innerHTML === feel.innerHTML) {
+      textContainer.innerHTML = priority.innerHTML;
+    }
+  };
+  setInterval(() => {
+    animateText();
+  }, 6000);
+
   return (
     <div className="home">
-      <img src={banner} alt="banner" className="banner" />
+      {/*//////// Banner /////////*/}
+      <div class="banner-container flex__col">
+        <img src={banner} alt="" className="banner" />
+        <div className="container">
+          <h1 id="backToTop">MAfriculture</h1>
+
+          <div className="quotes">
+            <p>
+              There Is Beauty In Everything — <br />
+              African Fashion Is Never An Exception.
+              <br />
+              <strong>Give The African Style A Try!</strong>
+            </p>
+            <div id="animated"></div>
+            <span class="feel hide" id="feel">
+              <strong>“FEEL THE ROYALTY”</strong>
+            </span>
+            <span class="hide" id="priority">
+              <strong>
+                <em>Your Satisfaction, Our Priority!</em>
+              </strong>
+            </span>
+          </div>
+
+          <div className="button">
+            <button class="btn">SHOP NOW</button>
+          </div>
+        </div>
+      </div>
 
       <div className="home-container container">
         {/*///////// Products /////////////*/}
