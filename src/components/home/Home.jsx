@@ -22,7 +22,9 @@ function Home() {
     <div className="home">
       {/*//////// Banner /////////*/}
       <div class="banner-container flex__col">
-        <img src={banner} alt="" className="banner" />
+        <div className="bannerImg__container">
+          <img src={banner} alt="" className="banner" />
+        </div>
         <div className="container">
           <h1 id="backToTop">MAfriculture</h1>
 
