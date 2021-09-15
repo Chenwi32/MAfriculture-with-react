@@ -87,3 +87,11 @@ code {
 .hide {
   display: none;
 }
+
+.slide {
+  margin-top: -50rem;
+}
+
+.fade {
+  opacity: 0;
+}

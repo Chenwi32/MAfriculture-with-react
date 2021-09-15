@@ -1,13 +1,15 @@
+.mobile__header,
 .header {
   height: 60px;
   background-color: #131921;
   position: sticky;
-  z-index: 100;
+  z-index: 10;
   top: 0;
+  border-bottom: #fff 3.5px solid;
+  box-shadow: 0px 0 5px 5px rgba(0, 0, 0, 0.603);
 }
 .header__container {
-  height: 60px;
-  background-color: #131921;
+  height: 100%;
   display: flex;
   align-items: center;
   z-index: 100;
@@ -83,4 +85,50 @@
 
 .items-inCart {
   font-size: 0.8em;
+}
+
+.mobile__header__nav {
+  position: absolute;
+  top: 50px;
+  background-color: #fff;
+  color: #000;
+  height: 50vh;
+  width: 98vw;
+  margin: auto;
+  right: 0rem;
+  transition: 0.7s;
+  z-index: -1;
+}
+
+.mobile__header {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .header {
+    display: none;
+  }
+
+  .mobile__header {
+    display: block;
+  }
+
+  .header__container {
+    justify-content: space-between;
+  }
+
+  .mobile__header .header__container .header-nav {
+    z-index: 100;
+  }
+
+  .menu__icons {
+    margin: 0 1rem;
+  }
+
+  .header-option {
+    color: #000;
+    font-size: 1.3em;
+    margin: 0.1rem 0;
+    padding: 0.5rem;
+  }
 }

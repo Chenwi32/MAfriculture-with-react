@@ -17,15 +17,9 @@
   color: #fff;
 }
 
-.checkout__title::before {
-  content: "\e613";
-  font-family: "jw-icons";
-  font-size: 24px;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  color: black;
+@media (max-width: 700px) {
+  .checkout {
+    flex-direction: column;
+    width: 100%;
+  }
 }

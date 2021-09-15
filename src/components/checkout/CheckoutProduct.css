@@ -24,3 +24,17 @@
 .info .btn {
   height: fit-content;
 }
+
+@media (max-width: 840px) {
+  .info {
+    flex-direction: column;
+  }
+
+  .info .btn {
+    padding: 0.5rem;
+  }
+
+  .checkoutProduct img {
+    width: 100px;
+  }
+}

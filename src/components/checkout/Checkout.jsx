@@ -9,10 +9,6 @@ function Checkout() {
   return (
     <div className="checkout container">
       <div className="checkout__left">
-        {/* 
-                Checkout advert Template
-              <div className="checkout__ad"></div> 
-              */}
         <div>
           <h2 className="checkout__title">
             {user
