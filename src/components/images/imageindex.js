@@ -1,4 +1,8 @@
 import banner from "./banner.png";
+import banner1 from "./banner3.png";
+import banner2 from "./banner1.png";
+import banner3 from "./banner2.png";
+
 import product_1 from "./product_1.1.png";
 import product_2 from "./product_2.png";
 import product_3 from "./product_3.png";
@@ -16,6 +20,9 @@ import product_14 from "./product_2.1.png";
 
 export {
   banner,
+  banner1,
+  banner2,
+  banner3,
   product_1,
   product_2,
   product_3,

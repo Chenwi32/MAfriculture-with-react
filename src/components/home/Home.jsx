@@ -2,6 +2,9 @@ import React from "react";
 import "./Home.css";
 import {
   banner,
+  banner1,
+  banner2,
+  banner3,
   product_1,
   product_2,
   product_3,
@@ -10,23 +13,10 @@ import {
   product_8,
 } from "../images/imageindex";
 import Product from "../product/Product";
+import { animateText } from "../..";
 
 function Home() {
   /*///////// Animate Text //////////*/
-
-  const animateText = () => {
-    const textContainer = document.getElementById("animated");
-    const feel = document.getElementById("feel");
-    const priority = document.getElementById("priority");
-
-    textContainer.innerHTML = feel.innerHTML;
-    if (textContainer.innerHTML === feel.innerHTML) {
-      textContainer.innerHTML = priority.innerHTML;
-    }
-  };
-  setInterval(() => {
-    animateText();
-  }, 6000);
 
   return (
     <div className="home">
@@ -43,7 +33,7 @@ function Home() {
               <br />
               <strong>Give The African Style A Try!</strong>
             </p>
-            <div id="animated"></div>
+            <div id="animated__text" className="animated__text"></div>
             <span class="feel hide" id="feel">
               <strong>“FEEL THE ROYALTY”</strong>
             </span>
