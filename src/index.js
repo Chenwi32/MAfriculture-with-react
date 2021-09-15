@@ -11,12 +11,6 @@ import {
   banner1,
   banner2,
   banner3,
-  product_1,
-  product_2,
-  product_3,
-  product_6,
-  product_11,
-  product_8,
 } from "./components/images/imageindex";
 
 ReactDOM.render(
@@ -95,9 +89,11 @@ const animateImages = () => {
     if (i < bannersLength) {
       i++;
       bannerImg.src = banners[i];
-    } else {
+    } else if (i === bannersLength) {
       i--;
       bannerImg.src = banners[i];
+    } else {
+      bannerImg.src = banner;
     }
   }, 9000);
 };

@@ -50,22 +50,13 @@
   font-size: 1.5em;
 }
 
-/* @media (max-width: 1305px) {
-  .banner-container .container {
-    margin-top: -30rem;
-  }
+.banner-container .container .btn {
+  font-size: 1em;
+  padding: 0.7rem 1rem;
 }
 
-@media (max-width: 885px) {
-  .banner-container .container {
-    margin-top: -20rem;
-  }
+/*////////// Mobile Version ////////////*/
 
-  /  .banner {
-    height: 500px;
-  } /
-}
- */
 @media (max-width: 595px) {
   .home-container {
     margin-top: 2rem;
