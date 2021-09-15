@@ -67,6 +67,7 @@ code {
   font-weight: 600;
   padding: 0.5rem 1rem;
   cursor: pointer;
+  border-radius: 5px;
 }
 .btn:hover {
   background-color: rgb(236, 31, 4);
