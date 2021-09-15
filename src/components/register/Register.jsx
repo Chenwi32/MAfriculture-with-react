@@ -88,9 +88,9 @@ function Register() {
 
           <p>
             By signing in, you agree to the MAfriculture
-            <a href=""> use</a> and <a href="">sale</a> policies. Please see our
-            <a href=""> Privacy</a> notice, <a href="">Cookies</a> notice and
-            our <a href="">Interest-Based Ads</a> notice
+            <a href="#"> use</a> and <a href="#">sale</a> policies. Please see our
+            <a href="#"> Privacy</a> notice, <a href="#">Cookies</a> notice and
+            our <a href="#">Interest-Based Ads</a> notice
           </p>
           <p className="create__notice">You already have an account?</p>
           <button className="register" onClick={toLogin}>

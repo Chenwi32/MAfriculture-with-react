@@ -4,7 +4,6 @@ import "../product/Product.css";
 import "./Products.css";
 import "../home/Home.css";
 import {
-  banner,
   product_1,
   product_2,
   product_3,
@@ -16,9 +15,7 @@ import {
   product_9,
   product_10,
   product_11,
-  product_12,
   product_13,
-  product_14,
 } from "../images/imageindex";
 
 function Products() {
