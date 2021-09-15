@@ -11,6 +11,7 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "axios": "^0.21.1",
+    "express": "^4.17.1",
     "firebase": "^8.0.2",
     "firebase-tools": "^9.18.0",
     "npm": "^7.23.0",
