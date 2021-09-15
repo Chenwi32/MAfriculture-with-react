@@ -6,6 +6,13 @@ import reportWebVitals from "./reportWebVitals";
 import reducer, { initialState } from "./reducer";
 import { StateProvider } from "./StateProvider";
 
+import {
+  banner,
+  banner1,
+  banner2,
+  banner3,
+} from "./components/images/imageindex";
+
 ReactDOM.render(
   <React.StrictMode>
     {/*     // We wrap the app with the StateProvider that we created so that // every
@@ -52,7 +59,48 @@ BgBtn.addEventListener("click", () => {
   }
 });
 
+/*/////// Banner Animated Text ///////*/
+const animateText = () => {
+  const textContainer = document.getElementById("animated__text");
+  const feel = document.getElementById("feel");
+  const priority = document.getElementById("priority");
+
+  textContainer.innerHTML = feel.innerHTML;
+  setInterval(() => {
+    if (textContainer.innerHTML === feel.innerHTML) {
+      textContainer.innerHTML = priority.innerHTML;
+    } else {
+      textContainer.innerHTML = feel.innerHTML;
+    }
+  }, 6000);
+};
+
+/*/////// Banner Animated Images ///////*/
+const animateImages = () => {
+  const bannerImg = document.querySelector(".banner");
+
+  bannerImg.src = banner;
+
+  let banners = [banner, banner1, banner2, banner3];
+
+  let i = 0;
+  let bannersLength = banners.length - 1;
+  setInterval(() => {
+    if (i < bannersLength) {
+      i++;
+      bannerImg.src = banners[i];
+    } else if (i === bannersLength) {
+      i--;
+      bannerImg.src = banners[i];
+    } else {
+      bannerImg.src = banner;
+    }
+  }, 9000);
+};
+
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+animateText();
+animateImages();
